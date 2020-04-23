@@ -150,22 +150,22 @@ To be able to build customer recommendation matrix we would need to extract the 
 First we visualize how income is aligned with gender and offer outcome.
 The binned income amounts will be used, where 0 - is all user that have `None` as income, and 7 - is the income above 100.000.
 
-![income-dist](./images/income-age-dist-binned.png)
+![incomeDist](/images/income-age-dist-binned.png)
 
 Interesting to note that all users that decided to to specify age are also left income per year unspecified. And the amount is quite high as is shown on the above bar plot.
 Men also tend to earn more than women, while women tend to respond to an offer more often.
 
-![initial-event-dist](/images/transcript-pie.png)
+![initialEventDist](/images/transcript-pie.png)
 
 ### Correlations
 
 Correlation is used to find which values are closely related with each other. A simplified view on correlations is shown below:
 
-![correlations](.images/heatmap-general.png)
+![Correlations](/images/heatmap-general.png)
 
 Correlation between features seems to be quite weak. However it can be noted that `bogo` is strongly related to `discount` and `reward` fields, while `mobile` channel is correlated with `difficulty` field. Which is quite expected.
 
-![correlations-details](/images/heatmap-event.png)
+![CorrelationsDetails](/images/heatmap-event.png)
 
 If we look closely how event outcome is related to gender or income we can notice that correlation is quite weak, so other additional parameters should be definitely be taken into account.
 
@@ -306,14 +306,14 @@ Where 0 - offer ignored, 1 - offer viewed, 2 - offer completed.
 
 #### XGB Model
 
-![XGB-Alternative](/images/RecommendationXGB-cm.png)
+![XGBAlternative](/images/RecommendationXGB-cm.png)
 
 An alternative model can easily identify response/ignore outcome when binary value is used.
 The model definitely can be used and can perform quick general prediction on large subsets of data.
 
 #### Alternative Performance Optimized XGB Model
 
-![XGB-Performance-model](/images/XGB-model-cm.png)
+![XGBPerformanceModel](/images/XGB-model-cm.png)
 
 
 ### Justification
