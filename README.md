@@ -155,17 +155,17 @@ The binned income amounts will be used, where 0 - is all user that have `None` a
 Interesting to note that all users that decided to to specify age are also left income per year unspecified. And the amount is quite high as is shown on the above bar plot.
 Men also tend to earn more than women, while women tend to respond to an offer more often.
 
-![initial-event-dist](./images/transcript-pie.png)
+![initial-event-dist](/images/transcript-pie.png)
 
 ### Correlations
 
 Correlation is used to find which values are closely related with each other. A simplified view on correlations is shown below:
 
-![correlations](./images/heatmap-general.png)
+![correlations](.images/heatmap-general.png)
 
 Correlation between features seems to be quite weak. However it can be noted that `bogo` is strongly related to `discount` and `reward` fields, while `mobile` channel is correlated with `difficulty` field. Which is quite expected.
 
-![correlations-details](./images/heatmap-event.png)
+![correlations-details](/images/heatmap-event.png)
 
 If we look closely how event outcome is related to gender or income we can notice that correlation is quite weak, so other additional parameters should be definitely be taken into account.
 
@@ -299,21 +299,21 @@ Other metrics are the following.
 #### Recommendation Engine
 For the classes [0,1,2] confusion matrix looks like the following:
 
-![RecommendationEngineCM](./images/RecommendationEngine-cm.png)
+![RecommendationEngineCM](/images/RecommendationEngine-cm.png)
 
 Where 0 - offer ignored, 1 - offer viewed, 2 - offer completed.
 
 
 #### XGB Model
 
-![XGB-Alternative](./images/RecommendationXGB-cm.png)
+![XGB-Alternative](/images/RecommendationXGB-cm.png)
 
 An alternative model can easily identify response/ignore outcome when binary value is used.
 The model definitely can be used and can perform quick general prediction on large subsets of data.
 
 #### Alternative Performance Optimized XGB Model
 
-![XGB-Performance-model](./images/XGB-model-cm.png)
+![XGB-Performance-model](/images/XGB-model-cm.png)
 
 
 ### Justification
